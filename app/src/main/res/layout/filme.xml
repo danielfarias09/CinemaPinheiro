@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/cartaz"
+            android:layout_width="110dp"
+            android:layout_height="210dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="3dp"
+            fresco:roundedCornerRadius="5dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/nome"
+            android:textColor="#ee801f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Medium Text"
+            android:id="@+id/horario"
+            android:layout_gravity="left"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seta"
+            android:layout_gravity="right|center"
+            android:src="@mipmap/seta_36dp"
+            android:paddingRight="3dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
